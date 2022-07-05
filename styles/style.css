@@ -1,0 +1,247 @@
+/* DEVELOPER: Smriti Poovannan, IS117-041, Summer 2022 */
+
+
+/* the styles for the elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-color: white;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 99%;                     
+    max-width: 960px;
+    margin: 0 auto;
+    border: 3px solid #000000;
+    background-color: #EFD4FD;
+}
+a:focus, a:hover {
+	font-style: italic;
+}
+/* the styles for the header */
+header {
+	padding: 1.5em 0 2em 0;
+	border-bottom: 3px solid #000000;
+		background-image: -moz-linear-gradient(
+	    30deg, #EFD4FD 0%, #EFD4FD 30%, white 50%, #EFD4FD 80%, #EFD4FD 100%);
+	background-image: -webkit-linear-gradient(
+	    30deg, #EFD4FD 0%, #EFD4FD 30%, white 50%, #EFD4FD 80%, #EFD4FD 100%);
+	background-image: -o-linear-gradient(
+	    30deg, #EFD4FD 0%, #EFD4FD 30%, white 50%, #EFD4FD 80%, #EFD4FD 100%);
+	background-image: linear-gradient(
+	    30deg, #EFD4FD 0%, #EFD4FD 30%, white 50%, #EFD4FD 80%, #EFD4FD 100%);
+}
+header h2 {
+	font-size: 175%;
+	color: #000000;
+	text-align: center;
+}
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+	text-align: center;
+}
+header img {
+	float: left;
+	padding: 0 3.75%;           
+}
+/* the styles for the navigation menu */
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+    width: 20%;                 
+}
+#nav_menu ul li a {
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #000000;
+    color: white;
+    font-weight: bold;
+}
+#nav_menu a.current {
+	color: #EFD4FD;
+}
+#nav_menu ul ul {
+	width: 100%;
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/* the styles for the main content */
+main {
+	clear: left;
+}
+
+/* the styles for the section */
+section {
+	float: right;
+	padding: 0 2.5% 20px 2.5%;      
+}
+section h1 {
+	font-size: 150%;
+	padding: .5em 0 .25em 0;
+	margin: 0;
+}
+section h2 {
+	color: #000000;
+	font-size: 130%;
+	padding: .5em 0 .25em 0;
+}
+section p {
+	padding-bottom: .5em;
+}
+section blockquote {
+	padding: 0 2em;
+	font-style: italic;
+}
+section ul {
+	padding: 0 0 .25em 1.25em;
+	list-style-type: circle;
+}
+section li {
+	padding-bottom: .35em;
+}
+section img {
+	max-width: 70%;
+	min-width: 150px;
+	display: block;
+  	margin-left: auto;
+ 	margin-right: auto;
+}
+
+/* the styles for the article */
+article {
+	padding: .5em 0;
+	border-top: 2px solid #000000;
+	border-bottom: 2px solid #000000;
+}
+article h2 {
+	padding-top: 0;
+}
+article h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+
+/* the styles for the footer */
+footer {
+	background-color: #000000;
+	clear: both;
+
+}
+footer p {
+	text-align: center;
+	color: white;
+	padding: 1em 0;
+}
+#mobile_menu {
+	display: none;
+}
+
+/* tablet portrait to standard 960 */
+@media only screen and (max-width: 959px) {
+	section h1 { font-size: 135%; }
+	section h2, aside h2 { font-size: 120%; }
+}
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 767px) {
+	header img { float: none; }
+	header { text-align: center; }
+	section {
+		float: none;
+		width: 95%;                    
+	}
+	section img { max-width: 30%; }
+	article img { max-width: 30%; }
+	#speakers {
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+		column-count: 2;
+	}
+	#nav_menu {
+		display: none;
+	}
+	#mobile_menu {
+		display: block;
+	}
+	.slicknav_menu {
+		background-color: #000000 !important;
+	}
+}
+
+/* mobile portrait to mobile landscape */
+@media only screen and (max-width: 479px) {
+	body { font-size: 90%; }
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	width: 50%;
+  }
+  
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+.container {
+	padding: 2px 16px;
+	text-align: justify;
+  }
+
+.row {
+	height: 50px;
+}
+
+
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+  }
+  
+  input[type=submit] {
+	background-color: #000000;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+	background-color: #ddabf6;
+  }
+  
+  .form {
+	border-radius: 5px;
+	background-color: #ddabf6;
+	padding: 20px;
+  }

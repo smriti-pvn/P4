@@ -1,0 +1,95 @@
+<!--DEVELOPER: Smriti Poovannan, IS117-041, Summer 2022-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Smriti Poovannan</title>
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    	});
+    </script>
+</head>
+
+<body>
+	<header>
+		<h2>Smriti Poovannan</h2>
+		<h3>Honors Human Computer Interaction at NJIT</h3>
+	</header>
+    <nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+    	<ul>
+			<li><a href="index.html" class="current">Home</a></li>
+        	<li><a href="index.html">Education</a>
+				<ul>
+                	<li><a href="coursework.html">Relevant Coursework</a></li>
+                	<li><a href="certifications.html">Certifications</a></li>
+            	</ul>
+			</li>
+        	<li><a href="#">Projects</a>
+				<ul>
+                	<li><a href="pearlhacks.html">Pearl Hacks 2021</a></li>
+                	<li><a href="tta.html">Tech Together Atlanta 2021</a></li>
+                	<li><a href="deishacks.html">Deis Hacks 2021</a></li>
+            	</ul>
+			</li>
+        	<li><a href="skills.html">Skills</a></li>
+        	<li><a href="contact.html">Contact</a></li>
+    	</ul>
+	</nav>
+	<main>
+		<section>
+			<img src="images/nyc.jpeg" alt="NYC Skyline">
+			
+			<article>
+				<h1>Featured Projects</h1>
+				
+				<div class="row>">
+					<div class="col-sm-6">
+						<h2>Safe Escape</h2>
+						<div class="card">
+							<img src="images/pearlhacks.png" alt="Pearl Hacks" style="width:100%">
+							<div class="container">
+								<h4><b><a href="http://website.safe-escape.space/index.html">Pearl Hacks</a></b></h4> 
+							
+							</div>
+						</div>
+					</div>	
+
+					<div class="col-sm-6">
+						<h2>Blossom</h2>
+						<div class="card">
+							<img src="images/tta.png" alt="Avatar" style="width:100%">
+							<div class="container">
+								<h4><b><a href="http://website.safe-escape.space/index.html">Tech Together Atlanta</a></b></h4>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6">
+						<h2>Rotary Club of Waltham</h2>
+						<div class="card">
+							<img src="images/deishacks.png" alt="Avatar" style="width:100%">
+							<div class="container">
+								<h4><b><a href="http://website.safe-escape.space/index.html">Deis Hacks</a></b></h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+			
+		</section>
+	</main>
+	<footer>
+		<p>&copy; Smriti Poovannan, July 5, 2022 | Terms of Service | Privacy Statement</p>
+	</footer>
+</body>
+</html>
